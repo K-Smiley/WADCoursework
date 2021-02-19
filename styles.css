@@ -1,1 +1,56 @@
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "section1 section2 section3"
+    "footer footer footer";
+  grid-gap: 0.2em;
+}
 
+nav {
+  background-color: lightgreen;
+  grid-area: nav;
+}
+
+main {
+  background-color: lightpink;
+  grid-area: main;
+}
+
+#section1 {
+  background-color: lightseagreen;
+  grid-area: section1;
+}
+
+#section2 {
+  background-color: lightsteelblue;
+  grid-area: section2;
+}
+
+#section3 {
+  background-color: linen;
+  grid-area: section3;
+}
+
+footer {
+  background-color: mediumpurple;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 2.2fr 1.2fr 1.2fr 1.2fr 0.8fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "section1"
+      "section2"
+      "section3"
+      "footer";
+  }
+}
