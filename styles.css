@@ -9,11 +9,50 @@
     "section1 section2 section3"
     "footer footer footer";
   grid-gap: 0.2em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* navigation styles*/
 nav {
   background-color: lightgreen;
   grid-area: nav;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 20px;
+  /* padding: 10px; */
+}
+
+nav li a.current {
+  background-color: lightgray;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
 }
 
 main {
