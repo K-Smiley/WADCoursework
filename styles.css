@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
   grid-template-areas:
-    "nav nav nav"
+    "header header nav"
     "main main main"
     "section1 section2 section3"
     "footer footer footer";
@@ -14,9 +14,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- TOP NAVIGATION BAR  ---------- */
+/* ---------- HEADER ---------- */
+header {
+  background-color: aqua;
+  grid-area: header;
+  font-size: 1em;
+}
+
+/* ---------- NAVIGATION BAR  ---------- */
 nav {
-  /* background-color: lightgreen; */
+  background-color: lightgreen;
   grid-area: nav;
 }
 
@@ -25,12 +32,11 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin-right: 1em;
 }
 
 nav li {
-  margin: 20px;
-
-  /* padding: 10px; */
+  margin: 1em;
 }
 
 /* Unvisited link  */
@@ -54,11 +60,6 @@ nav a:active {
   color: #0000ff;
 }
 
-/* Unvisited link */
-nav a:link {
-  color: black;
-}
-
 /* Highlight page link currently on*/
 nav li a.current {
   background-color: lightgray;
@@ -71,6 +72,11 @@ main {
   grid-area: main;
 }
 
+h2 {
+  font-size: 2.5em;
+}
+
+/* ---------- SECTIONS ---------- */
 /* Section One */
 #section1 {
   background-color: lightseagreen;
@@ -113,8 +119,9 @@ footer li i {
 @media only screen and (max-width: 550px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 2.2fr 1.2fr 1.2fr 1.2fr 0.8fr;
+    grid-template-rows: 0.3fr 0.4fr 2.2fr 1.3fr 1.3fr 1.3fr 0.2fr;
     grid-template-areas:
+      "header"
       "nav"
       "main"
       "section1"
