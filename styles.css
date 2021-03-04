@@ -3,7 +3,7 @@ p {
 }
 
 /* ---------- HOMEPAGE GRID LAYOUT ---------- */
-.grid {
+.index-grid {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,6 +13,23 @@ p {
     "main main main"
     "section1 section2 section3"
     "footer footer footer";
+  grid-gap: 0.2em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- ABOUT PAGE GRID LAYOUT ---------- */
+
+.about-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "section4"
+    "footer ";
   grid-gap: 0.2em;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -121,6 +138,13 @@ h3 {
   grid-area: section3;
 }
 
+/*ABOUT PAGE */
+/* Section Four */
+#section4 {
+  background-color: linen;
+  grid-area: section4;
+}
+
 /* ---------- FOOTER ---------- */
 footer {
   grid-area: footer;
@@ -143,7 +167,7 @@ footer li i {
 
 /* ---------- HOMEPAGE RESPONSIVE FORMATTING ---------- */
 @media only screen and (max-width: 550px) {
-  .grid {
+  .index-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.4fr 2.2fr 1.3fr 1.3fr 1.3fr 0.2fr;
     grid-template-areas:
@@ -153,6 +177,19 @@ footer li i {
       "section1"
       "section2"
       "section3"
+      "footer";
+  }
+}
+
+/* ---------- ABOUT PAGE RESPONSIVE FORMATTING ---------- */
+@media only screen and (max-width: 550px) {
+  .index-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 3.5fr 1fr 0.2fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "section4"
       "footer";
   }
 }
