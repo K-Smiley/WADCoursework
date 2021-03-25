@@ -18,8 +18,37 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ---------- ABOUT PAGE GRID LAYOUT ---------- */
+/* ---------- PAY CALC  PAGE GRID LAYOUT ---------- */
+.pay-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.7fr 0.6fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer ";
+  grid-gap: 0.2em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+/* ---------- JOB DESC  PAGE GRID LAYOUT ---------- */
+.job-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.7fr 0.6fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer ";
+  grid-gap: 0.2em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- ABOUT PAGE GRID LAYOUT ---------- */
 .about-grid {
   display: grid;
   height: 100vh;
