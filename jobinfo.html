@@ -12,7 +12,8 @@
 
     <style>
         /* # */
-        #results {
+        #results,
+        #pay-results {
             display: none;
         }
     </style>
@@ -52,25 +53,22 @@
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fas fa-archive"></i></span>
+                                        <span class="input-group-addon"><i class="fas fa-search"></i></span>
                                         <input type="text" class="form-control" id="jobtitle"
-                                            placeholder="Enter  job title">
+                                            placeholder="Search for job">
                                     </div>
                                 </div>
 
-                                <!-- 
-                                <div class="form-group">
-                                    <select name="job" class="form-control" id="job" placeholder="Enter job title">
-                                        <option value="">--Please choose a job title-</option>
-                                        <option value="year">Year</option>
-                                        <option value="month">Month</option>
-                                        <option value="week">Week</option>
-                                        <option value="hour">Hour</option>
-                                    </select>
-                                </div> -->
 
                                 <div class="form-group">
-                                    <input type="submit" value="Get Info" class="btn btn-dark btn-block">
+                                    <select name="job" class="form-control" id="job">
+                                    </select>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <input type="submit" value="Get Details" class="btn btn-dark btn-block">
                                 </div>
 
                             </form>
@@ -79,32 +77,48 @@
 
                             <!-- RESULTS -->
                             <div id="results" class="pt-4">
-                                <h5>Results</h5>
+                                <h6>Description, Qualifications & Tasks</h6>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fas fa-pound-sign"></i></span>
-                                        <input type="number" class="form-control" id="first" disabled>
+                                        <span class="input-group-addon"><i class="fas fa-info-circle"></i></span>
+                                        <textarea type="text" class="form-control" id="description" disabled></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fas fa-pound-sign"></i></span>
-                                        <input type="number" class="form-control" id="second" disabled>
+                                        <span class="input-group-addon"><i class="fas fa-graduation-cap"></i></span>
+                                        <textarea type="text" class="form-control" rows="3" id="qualifications"
+                                            disabled></textarea>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <span class="input-group-addon"><i class="fas fa-pound-sign"></i></span>
-                                        <input type="number" class="form-control" id="third" disabled>
+                                        <span class="input-group-addon"><i class="fas fa-tasks"></i></span>
+                                        <textarea type="text" class="form-control" rows="3" id="tasks"
+                                            disabled></textarea>
                                     </div>
                                 </div>
 
                             </div>
+
+                            <div id="pay-results" class="pt-4">
+                                <h6>Most Recent Salary</h6>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fas fa-pound-sign"></i></span>
+                                        <text type="text" class="form-control" id="payInfo" disabled> </text>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
+            </div>
 
 
         </main>
