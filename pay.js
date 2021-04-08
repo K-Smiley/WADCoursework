@@ -79,4 +79,4 @@ function calcHourly(wage, hours) {
   third.value = weekly_wage.toFixed(2);
 }
 
-// ---------- jobinfo.html ----------
+

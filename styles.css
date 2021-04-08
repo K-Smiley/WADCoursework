@@ -2,20 +2,45 @@ p {
   text-align: left;
 }
 
+.heading {
+  color: #c63545;
+}
+
+#pay-btn,
+#job-btn {
+  background-color: #c63545;
+  color: white;
+}
+
+main {
+  background-color: #c63545;
+}
+
+.banner {
+  margin-top: 4em;
+}
+
+img {
+  max-width: 15em;
+}
+
+#about-text {
+  font-size: 0.5em;
+}
+
 /* ---------- HOMEPAGE GRID LAYOUT ---------- */
 .index-grid {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
+  grid-template-rows: 0.4fr 2fr 1.2fr 0.1fr;
   grid-template-areas:
     "header header nav"
     "main main main"
     "section1 section2 section3"
     "footer footer footer";
-  grid-gap: 0.2em;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* ---------- PAY CALC  PAGE GRID LAYOUT ---------- */
@@ -30,7 +55,7 @@ p {
     "footer ";
   grid-gap: 0.2em;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* ---------- JOB DESC  PAGE GRID LAYOUT ---------- */
@@ -45,7 +70,7 @@ p {
     "footer ";
   grid-gap: 0.2em;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* ---------- ABOUT PAGE GRID LAYOUT ---------- */
@@ -61,18 +86,22 @@ p {
     "footer ";
   grid-gap: 0.2em;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* ---------- HEADER ---------- */
 header {
-  background-color: aqua;
+  color: #c63545;
+  text-align: left;
   grid-area: header;
+}
+
+#title {
+  margin-left: 2em;
 }
 
 /* ---------- NAVIGATION BAR  ---------- */
 nav {
-  background-color: lightgreen;
   grid-area: nav;
 }
 
@@ -80,110 +109,114 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   margin-right: 1em;
 }
 
-nav li {
-  margin: 0.5em;
-}
-
-/* Unvisited link  */
-nav a {
-  color: black;
+/* ----- Unvisited links ----- */
+nav a,
+#pay-nav a,
+#job-nav a {
+  color: #c63545;
   text-decoration: none;
 }
 
-/* Visited link    */
-/* nav a:visited {
-  color: #00ff00;
-} */
-
-/* Mouse over link */
+/* ----- Mouse over links  ----- */
 nav a:hover {
-  color: #ff00ff;
+  background-color: #dbca81;
+  padding: 0.5em;
 }
 
-/* Selected link   */
+/* ----- Selected links  ----- */
 nav a:active {
-  color: #0000ff;
+  color: #906b75;
 }
 
-/* Highlight page link currently on*/
-nav li a.current {
-  background-color: lightgray;
-  /* padding: 10px; */
+#pay-nav,
+#job-nav,
+#about-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#pay-nav li,
+#job-nav li,
+#about-nav li {
+  padding: 1em;
 }
 
 /* ---------- HOMEPAGE MAIN CONTENT  ---------- */
 main {
-  background-color: lightpink;
   grid-area: main;
+  color: white;
+  font-size: 1.3em;
 }
 
 main p {
   text-align: center;
 }
 
-h2 {
-  color: blue;
-  font-size: 2em;
-}
-
 /* ---------- SECTIONS ---------- */
 
 .card-header {
-  background-color: burlywood;
-  color: cornflowerblue;
+  background-color: #c63545;
+  color: white;
+  padding: 0.1em;
 }
 
-/* 
-h3 {
-    color: blueviolet;
-} */
-
 .card {
-  padding: 2em;
+  padding: 1em;
+  background-color: #dbca81;
 }
 
 .content {
-  border: solid 1px yellow;
+  background-color: white;
+  padding: 1em;
+  height: 15em;
 }
 /* Section One */
 #section1 {
-  background-color: lightseagreen;
+  background-color: #eeeee4;
   grid-area: section1;
 }
 
 /* Section Two */
 #section2 {
-  background-color: lightsteelblue;
+  background-color: #eeeee4;
   grid-area: section2;
 }
 
 /* Section Three */
 #section3 {
-  background-color: linen;
+  background-color: #eeeee4;
   grid-area: section3;
 }
 
-/*ABOUT PAGE */
+/* -- ABOUT PAGE -- */
 /* Section Four */
 #section4 {
-  background-color: linen;
+  background-color: #eeeee4;
   grid-area: section4;
 }
 
 #contact-form {
   margin: auto;
-  border: 1px grey solid;
 }
 
 .contact-border {
-  background-color: #ff00ff;
+  background-color: #c63545;
+  color: white;
   border-radius: 5px;
   padding: 2em;
   margin-top: 2em;
+}
+
+#form-heading {
+  color: white;
+}
+
+#form-btn {
+  background-color: #dbca81;
 }
 
 /* ---------- FOOTER ---------- */

@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c8a19f8424.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div class="about-grid">
+    <div class="index-grid">
 
-        <!----------- HEADER ---------->
-        <!-- <header>
-            <h1>Test Header</h1>
-        </header> -->
+        <!-- HEADER -->
+        <header>
+            <div id="title">
+                <h1>Job Information Site</h1>
+            </div>
+        </header>
 
 
-        <!----------- NAVBAR ---------->
+        <!--NAVBAR -->
         <nav>
             <ul>
                 <li><a href="index.html">Homepage</a> </li>
@@ -30,33 +32,64 @@
         </nav>
 
 
-        <!----------- MAIN ---------->
-        <main>
-            <h2>Introduction Header</h2>
-            <p>Sub intro sentence</p>
+        <!--MAIN -->
+        <main style="background-image: url('/images/colour.png');">
+            <div class="banner">
+                <h2>About Us<h2>
+                        <p id="about-text">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. </p>
+            </div>
         </main>
 
 
-
-        <!--Fourth section in site-->
-        <section id="section4">
+        <!-- SECTIONS -->
+        <!--Section One -->
+        <section id="section1">
             <div class="card">
                 <div class="card-header">
-                    <h3>A short heading</h3>
+                    <h3>Director</h3>
                 </div>
                 <div class="content">
-                    <p> The idea of reaching the North Pole by means of balloons appears to have been entertained
-                        many years ago. </p>
-                    <p>The idea of reaching the North Pole by means of balloons appears to have
-                        been
-                        entertained many years ago.</p>
-                    <button onclick="window.location.href='contactus.html'">Contact Us</button>
+                    <h4>Person 1</h4>
+                    <img src="/images/person1.jpg"
+                        alt="Head and shoulders of woman. Shoulder-length red hair. Standing in front of a lake and mountain">
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section Two -->
+        <section id="section2">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Researcher</h3>
+                </div>
+                <div class="content">
+                    <h3>Job title</h3>
+                    <img src="/images/person2.jpg"
+                        alt="Head and shoulders of man.  Short brown hair and full, well-trimmed beard. Standing inside an office">
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section Three -->
+        <section id="section3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Software Developer</h3>
+                </div>
+                <div class="content">
+                    <h4>Job title</h4>
+                    <img src="/images/person3.jpg"
+                        alt="Head and shoulders of woman. Long, red and curly  hair. Standing in front of a brick wall">
+                    <p>xxxxxx</p>
+
                 </div>
             </div>
         </section>
 
 
-        <!----------- FOOTER ---------->
+        <!-- FOOTER -->
         <footer>
             <ul>
                 <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>

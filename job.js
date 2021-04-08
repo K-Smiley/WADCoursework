@@ -31,6 +31,7 @@ jobinfo_form.addEventListener("submit", function (e) {
     })
 
     .then((data) => {
+      console.log(data);
       displayPay(data);
     });
 });
@@ -81,8 +82,10 @@ function displayInfo(data) {
 function displayPay(data) {
   document.getElementById("pay-results").style.display = "block";
   let weekly_pay = data.series[0].estpay;
+  console.log(weekly_pay);
   let salary = calcSalary(weekly_pay);
-  document.getElementById("payInfo").innerHTML = salary;
+  console.log(salary);
+  document.getElementById("salary").value = salary;
 }
 
 function calcSalary(weekly_pay) {
