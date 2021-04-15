@@ -11,9 +11,9 @@
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <style>
-        /* # */
-        #results,
-        #pay-results {
+        /* Form results hidden on page load, displayed after successful API call */
+        #job-results,
+        #job-pay {
             display: none;
         }
     </style>
@@ -23,13 +23,8 @@
 
     <div class="job-grid">
 
-        <!-- HEADER -->
-        <!-- <header>
-            <h1>Test Header</h1>
-        </header> -->
 
-
-        <!--NAVBAR -->
+        <!--Navbar -->
         <nav>
             <ul id="job-nav">
                 <li><a href="index.html">Homepage</a> </li>
@@ -40,7 +35,7 @@
         </nav>
 
 
-        <!--MAIN -->
+        <!--Main sections contains form  -->
         <main>
 
             <div class="container">
@@ -55,7 +50,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fas fa-search"></i></span>
                                         <input type="text" class="form-control" id="jobtitle"
-                                            placeholder="Search for job">
+                                            placeholder="Search for job" required>
                                     </div>
                                 </div>
 
@@ -75,8 +70,8 @@
 
 
 
-                            <!-- RESULTS -->
-                            <div id="results" class="pt-4">
+                            <!-- Results -->
+                            <div id="job-results" class="pt-4">
                                 <h6>Description, Qualifications & Tasks</h6>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -101,7 +96,7 @@
 
                             </div>
 
-                            <div id="pay-results" class="pt-4">
+                            <div id="job-pay" class="pt-4">
                                 <h6>Most Recent Salary</h6>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -120,7 +115,7 @@
 
 
 
-        <!--FOOTER -->
+        <!--Footer -->
         <footer>
             <ul>
                 <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
@@ -130,7 +125,7 @@
             </ul>
         </footer>
 
-        <script src="job.js"></script>
+        <script src="jobinfo.js"></script>
 </body>
 
 </html>

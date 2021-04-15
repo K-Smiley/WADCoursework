@@ -12,7 +12,6 @@
 
     <style>
         /* #loading, */
-        #results,
         #pay-results {
             display: none;
         }
@@ -23,13 +22,7 @@
 
     <div class="pay-grid">
 
-        <!--HEADER -->
-        <!-- <header>
-            <h1>Test Header</h1>
-        </header> -->
-
-
-        <!-- NAVBAR -->
+        <!-- Navbar -->
         <nav>
             <ul id="pay-nav">
                 <li><a href="index.html">Homepage</a> </li>
@@ -40,7 +33,7 @@
         </nav>
 
 
-        <!--MAIN -->
+        <!--Main -->
         <main id="pay-main">
 
             <div class="container">
@@ -54,7 +47,8 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fas fa-pound-sign"></i></span>
-                                        <input type="text" class="form-control" id="wage" placeholder="Enter  wages">
+                                        <input type="number" class="form-control" id="wage" placeholder="Enter  wages"
+                                            min="1" required>
                                     </div>
                                 </div>
 
@@ -62,13 +56,13 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="fas fa-hourglass-start"></i></span>
                                         <input type="number" class="form-control" id="hours"
-                                            placeholder="Enter hours worked per week">
+                                            placeholder="Enter hours worked per week" min="1" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <select name="frequency" class="form-control" id="frequency">
-                                        <option value="">--Please choose a frequency--</option>
+                                        <option value="">--Please choose the frequency--</option>
                                         <option value="year">Year</option>
                                         <option value="month">Month</option>
                                         <option value="week">Week</option>
@@ -82,8 +76,8 @@
 
                             </form>
 
-                            <!-- RESULTS -->
-                            <div id="results" class="pt-4">
+                            <!-- Results -->
+                            <div id="pay-results" class="pt-4">
                                 <h5>Results</h5>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -115,10 +109,7 @@
 
         </main>
 
-
-
-
-        <!--FOOTER -->
+        <!--Footer -->
         <footer>
             <ul>
                 <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>

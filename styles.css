@@ -1,95 +1,4 @@
-p {
-  text-align: left;
-}
-
-.heading {
-  color: #c63545;
-}
-
-#pay-btn,
-#job-btn {
-  background-color: #c63545;
-  color: white;
-}
-
-main {
-  background-color: #c63545;
-}
-
-.banner {
-  margin-top: 4em;
-}
-
-img {
-  max-width: 15em;
-}
-
-#about-text {
-  font-size: 0.5em;
-}
-
-/* ---------- HOMEPAGE GRID LAYOUT ---------- */
-.index-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 2fr 1.2fr 0.1fr;
-  grid-template-areas:
-    "header header nav"
-    "main main main"
-    "section1 section2 section3"
-    "footer footer footer";
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* ---------- PAY CALC  PAGE GRID LAYOUT ---------- */
-.pay-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 2.7fr 0.6fr;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer ";
-  grid-gap: 0.2em;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* ---------- JOB DESC  PAGE GRID LAYOUT ---------- */
-.job-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 2.7fr 0.6fr;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer ";
-  grid-gap: 0.2em;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* ---------- ABOUT PAGE GRID LAYOUT ---------- */
-.about-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
-  grid-template-areas:
-    "nav"
-    "main"
-    "section4"
-    "footer ";
-  grid-gap: 0.2em;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-/* ---------- HEADER ---------- */
+/* Headers  */
 header {
   color: #c63545;
   text-align: left;
@@ -100,7 +9,12 @@ header {
   margin-left: 2em;
 }
 
-/* ---------- NAVIGATION BAR  ---------- */
+/* Heading titles for Homepage and About page */
+.heading {
+  color: #c63545;
+}
+
+/* Navbars*/
 nav {
   grid-area: nav;
 }
@@ -113,7 +27,7 @@ nav ul {
   margin-right: 1em;
 }
 
-/* ----- Unvisited links ----- */
+/* Unvisited links */
 nav a,
 #pay-nav a,
 #job-nav a {
@@ -121,13 +35,13 @@ nav a,
   text-decoration: none;
 }
 
-/* ----- Mouse over links  ----- */
+/* Mouse over links */
 nav a:hover {
   background-color: #dbca81;
   padding: 0.5em;
 }
 
-/* ----- Selected links  ----- */
+/*  Selected links   */
 nav a:active {
   color: #906b75;
 }
@@ -145,7 +59,99 @@ nav a:active {
   padding: 1em;
 }
 
-/* ---------- HOMEPAGE MAIN CONTENT  ---------- */
+/* Images on Homepage and About page */
+img {
+  width: 50%;
+  height: auto;
+  margin: 0.5em;
+}
+
+/* Main sections for Pay and Jobinfo pages*/
+main {
+  background-color: #c63545;
+}
+
+/* Text placement on top of hero banner image for homepage and about page*/
+.banner {
+  margin-top: 4em;
+  margin-left: 11em;
+  margin-right: 11em;
+}
+
+/* Buttons on Pay, Jobinfo and Contact Us page buttons*/
+#pay-btn,
+#job-btn,
+#contact-btn {
+  background-color: #c63545;
+  color: white;
+}
+
+/* Extra style for Contact Us button*/
+#contact-btn {
+  border: none;
+  padding: 0.5em;
+  border-radius: 10%;
+}
+
+/* Form text on Jobinfo page*/
+#results,
+#pay-results {
+  color: black;
+}
+
+#about-text {
+  font-size: 0.5em;
+}
+
+/* GRID LAYOUTS */
+/* Homepage and About page*/
+.index-grid,
+.about-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 2fr 1.2fr 0.1fr;
+  grid-template-areas:
+    "header header nav"
+    "main main main"
+    "section1 section2 section3"
+    "footer footer footer";
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Pay calculator */
+.pay-grid,
+job-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.7fr 0.6fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer ";
+  grid-gap: 0.2em;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Job info */
+.job-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2.7fr 0.6fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer ";
+  grid-gap: 0.2em;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Home page and About page main content  */
 main {
   grid-area: main;
   color: white;
@@ -156,7 +162,7 @@ main p {
   text-align: center;
 }
 
-/* ---------- SECTIONS ---------- */
+/* SECTIONS */
 
 .card-header {
   background-color: #c63545;
@@ -173,31 +179,31 @@ main p {
   background-color: white;
   padding: 1em;
   height: 15em;
+  border-bottom: 2px solid #c63545;
 }
-/* Section One */
-#section1 {
+
+.content p {
+  text-align: center;
+}
+/* section one */
+#home-calc-section {
   background-color: #eeeee4;
   grid-area: section1;
 }
 
-/* Section Two */
-#section2 {
+/* section two */
+#home-job-section {
   background-color: #eeeee4;
   grid-area: section2;
 }
 
-/* Section Three */
-#section3 {
+/* section three */
+#home-about-section {
   background-color: #eeeee4;
   grid-area: section3;
 }
 
-/* -- ABOUT PAGE -- */
-/* Section Four */
-#section4 {
-  background-color: #eeeee4;
-  grid-area: section4;
-}
+/* About Page */
 
 #contact-form {
   margin: auto;
@@ -211,6 +217,7 @@ main p {
   margin-top: 2em;
 }
 
+/*  Contact Us form */
 #form-heading {
   color: white;
 }
@@ -219,7 +226,7 @@ main p {
   background-color: #dbca81;
 }
 
-/* ---------- FOOTER ---------- */
+/* Footers */
 footer {
   grid-area: footer;
 }
@@ -239,9 +246,10 @@ footer li i {
   color: black;
 }
 
-/* ---------- HOMEPAGE RESPONSIVE FORMATTING ---------- */
+/*  homepage and about page responsive formatting*/
 @media only screen and (max-width: 550px) {
-  .index-grid {
+  .index-grid,
+  .about-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.4fr 2.2fr 1.3fr 1.3fr 1.3fr 0.2fr;
     grid-template-areas:
@@ -251,19 +259,6 @@ footer li i {
       "section1"
       "section2"
       "section3"
-      "footer";
-  }
-}
-
-/* ---------- ABOUT PAGE RESPONSIVE FORMATTING ---------- */
-@media only screen and (max-width: 550px) {
-  .index-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 3.5fr 1fr 0.2fr;
-    grid-template-areas:
-      "nav"
-      "main"
-      "section4"
       "footer";
   }
 }
